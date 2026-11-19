@@ -31,11 +31,11 @@ The splash should use the night-sky artwork as its visual foundation. Animation 
 
 ## Planned components
 
-- KDE colour scheme
+- [x] Initial KDE colour scheme (`colors/Lyd Ark Wicca.colors`)
 - Plasma Look-and-Feel package
-- Boot splash screen
+- [ ] Boot splash screen (visual specification added; QML/package pending Plasma-version validation)
 - Wallpapers
-- Launcher emblem
+- [x] Initial scalable crescent launcher emblem (`icons/lyd-ark-wicca-moon.svg`)
 - Optional coordinated icons and cursors
 - Login-screen branding, where supported by the target Plasma version
 
