@@ -1,0 +1,37 @@
+# Lyd Ark Wicca Plasma Splash
+
+This is the Plasma 6 Look-and-Feel package for the Wicca splash screen.
+
+## Contents
+
+- `metadata.json`: Plasma Look-and-Feel package metadata.
+- `contents/splash/Splash.qml`: animated splash layout.
+- `contents/splash/images/crescent-moon.svg`: antique-gold crescent.
+- `contents/splash/images/moon-glow.svg`: restrained diffuse glow.
+- `contents/splash/images/shooting-star.svg`: shooting star and fading trail.
+
+## Install for the current user
+
+From the repository root:
+
+```sh
+mkdir -p ~/.local/share/plasma/look-and-feel
+cp -a themes/wicca/look-and-feel/org.lydark.wicca.desktop \
+  ~/.local/share/plasma/look-and-feel/
+```
+
+Then open System Settings → Appearance → Splash Screen, select **Lyd Ark Wicca**, and apply it. The package can also be installed system-wide under `/usr/share/plasma/look-and-feel/`.
+
+## Design constraints
+
+The shooting star travels along one open curved sweep above the crescent. Its motion path is not drawn. There are no orbit rings, decorative loops, stray circles, or lines crossing the moon.
+
+The splash uses Breeze-compatible Plasma geometry; it does not change desktop widget spacing or sizing.
+
+## Important distinction
+
+This is the **Plasma startup splash** shown while the desktop session starts. It is not the earlier bootloader / Plymouth screen shown before the login manager. A separate Plymouth theme is required for that earlier boot phase.
+
+## Validation status
+
+The package targets the Plasma 6.8.3 version observed in the Lyd Ark desktop image build logs. It has been added to the repository but still needs runtime validation on an installed Lyd Ark system. Plasma is supplied by Arch rolling packages, so recheck compatibility if the image moves to a newer Plasma major version.
