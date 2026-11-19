@@ -1,0 +1,16 @@
+{
+  "KPackageStructure": "Plasma/LookAndFeel",
+  "KPlugin": {
+    "Id": "org.lydark.wicca.desktop",
+    "Name": "Lyd Ark Wicca",
+    "Description": "A midnight-plum Plasma experience with a golden crescent moon splash screen.",
+    "Version": "0.1.0",
+    "License": "GPL-3.0-or-later",
+    "Authors": [
+      {
+        "Name": "Lyd Ark Project"
+      }
+    ]
+  },
+  "X-Plasma-APIVersion": "2"
+}
