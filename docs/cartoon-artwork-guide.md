@@ -20,12 +20,29 @@ Use a cute, polished cartoon-vector style: warm, friendly, softly dimensional, a
 The shared drawing style does not mean every theme uses the same colours or motifs.
 
 ### Lyd Ark Wicca
+
+A cute, contemporary Wicca-inspired visual identity: mystical, nature-connected, calm, and gently magical. It should draw on Wiccan symbolism rather than relying on generic fantasy-witch imagery.
+
+**Palette**
 - Midnight Plum `#21152E`, Deep Royal Plum `#30203F`, Royal Purple `#583477`.
 - Amethyst `#9874C4`, Antique Gold `#B69A55`, Soft Lavender `#D7C8E8`, Warm Ivory `#E9E1D5`.
-- Use cute celestial motifs: crescent moons, rounded stars, tiny sparkles, and gentle night-sky accents.
-- Keep the mood magical, calm, and elegant rather than gothic or overly ornate.
+
+**Motifs**
+- Moon phases and triple-moon imagery as recurring signature elements.
+- Stars, small sparkles, and night-sky details.
+- Botanical elements such as lavender, rosemary, sage, leaves, and delicate vines.
+- Crystals and gemstones, especially amethyst, drawn with rounded cartoon facets.
+- Subtle pentacle geometry and other recognisable Wiccan-inspired symbols may be used as considered accents, not as clutter or decoration without context.
+- Seasonal and nature-cycle references can appear in wallpapers and larger illustrations.
+
+**Treatment**
+- Give moons, stars, crystals, and botanical shapes friendly rounded forms, gentle highlights, and soft shading.
+- Keep the mood magical, peaceful, and elegant rather than gothic, spooky, or overly ornate.
+- Use antique gold for key symbolic details against the deep purple palette.
+- Avoid turning every icon into a moon or filling every surface with occult symbols. Let motifs support the subject and remain legible.
 
 ### Lyd Ark Cute
+
 - Use a pink-led pastel palette with lavender as a supporting colour.
 - Use cheerful rounded motifs and friendly illustrative details.
 - Keep the result clean, bright, and coordinated; avoid clutter and excessive decorative hearts.
@@ -44,6 +61,7 @@ The shared drawing style does not mean every theme uses the same colours or moti
 - [ ] Recognizable at small desktop icon sizes
 - [ ] Rounded, consistent vector construction
 - [ ] Palette matches its theme
+- [ ] Wicca assets use intentional Wiccan-inspired celestial or nature motifs where appropriate
 - [ ] Good contrast on both light and dark surfaces where applicable
 - [ ] No unnecessary background, border, or decorative clutter
 - [ ] Original artwork; no copied third-party characters or brand marks
