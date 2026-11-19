@@ -15,14 +15,14 @@ wordmark_sprite = Sprite(wordmark_image);
 wordmark_sprite.SetPosition(screen_w / 2 - wordmark_image.GetWidth() / 2, screen_h * 0.48, 10);
 
 phase_files = [
-  "moon-00-new.png",
-  "moon-01-waxing-crescent.png",
-  "moon-02-first-quarter.png",
-  "moon-03-waxing-gibbous.png",
-  "moon-04-full.png",
-  "moon-05-waning-gibbous.png",
-  "moon-06-last-quarter.png",
-  "moon-07-waning-crescent.png"
+  "00-new.png",
+  "01-waxing-crescent.png",
+  "02-first-quarter.png",
+  "03-waxing-gibbous.png",
+  "04-full.png",
+  "05-waning-gibbous.png",
+  "06-last-quarter.png",
+  "07-waning-crescent.png"
 ];
 
 phase_sprites = [];
