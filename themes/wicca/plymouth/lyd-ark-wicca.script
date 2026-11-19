@@ -6,7 +6,7 @@ Window.SetBackgroundBottomColor(0.188, 0.122, 0.247);
 screen_w = Window.GetWidth();
 screen_h = Window.GetHeight();
 
-logo_image = Image("lyd-ark-wicca.svg").Scale(176, 176);
+logo_image = Image("lyd-ark-wicca.png").Scale(176, 176);
 logo_sprite = Sprite(logo_image);
 logo_sprite.SetPosition(screen_w / 2 - logo_image.GetWidth() / 2, screen_h * 0.19, 10);
 
@@ -15,14 +15,14 @@ wordmark_sprite = Sprite(wordmark_image);
 wordmark_sprite.SetPosition(screen_w / 2 - wordmark_image.GetWidth() / 2, screen_h * 0.48, 10);
 
 phase_files = [
-  "moon-00-new.svg",
-  "moon-01-waxing-crescent.svg",
-  "moon-02-first-quarter.svg",
-  "moon-03-waxing-gibbous.svg",
-  "moon-04-full.svg",
-  "moon-05-waning-gibbous.svg",
-  "moon-06-last-quarter.svg",
-  "moon-07-waning-crescent.svg"
+  "moon-00-new.png",
+  "moon-01-waxing-crescent.png",
+  "moon-02-first-quarter.png",
+  "moon-03-waxing-gibbous.png",
+  "moon-04-full.png",
+  "moon-05-waning-gibbous.png",
+  "moon-06-last-quarter.png",
+  "moon-07-waning-crescent.png"
 ];
 
 phase_sprites = [];
@@ -74,7 +74,7 @@ fun display_password_callback(prompt, bullets)
   prompt_sprite.SetImage(prompt_image);
   prompt_sprite.SetX(screen_w / 2 - prompt_image.GetWidth() / 2);
   entry_text = "";
-  for (i = 0; i < bullets; i++) { entry_text = entry_text + "•"; }
+  for (i = 0; i < bullets; i++) { entry_text = entry_text + "*"; }
   entry_image = Image.Text(entry_text, 0.91, 0.84, 0.68);
   entry_sprite.SetImage(entry_image);
   entry_sprite.SetX(screen_w / 2 - entry_image.GetWidth() / 2);
