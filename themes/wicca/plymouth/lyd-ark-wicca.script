@@ -1,0 +1,108 @@
+# Lyd Ark Wicca Plymouth theme
+# Eight moon phases map directly to Plymouth's boot progress (0.0–1.0).
+Window.SetBackgroundTopColor(0.129, 0.082, 0.180);
+Window.SetBackgroundBottomColor(0.188, 0.122, 0.247);
+
+screen_w = Window.GetWidth();
+screen_h = Window.GetHeight();
+
+logo_image = Image("lyd-ark-wicca.svg").Scale(176, 176);
+logo_sprite = Sprite(logo_image);
+logo_sprite.SetPosition(screen_w / 2 - logo_image.GetWidth() / 2, screen_h * 0.19, 10);
+
+wordmark_image = Image.Text("LYD ARK LINUX", 0.91, 0.84, 0.68);
+wordmark_sprite = Sprite(wordmark_image);
+wordmark_sprite.SetPosition(screen_w / 2 - wordmark_image.GetWidth() / 2, screen_h * 0.48, 10);
+
+phase_files = [
+  "moon-00-new.svg",
+  "moon-01-waxing-crescent.svg",
+  "moon-02-first-quarter.svg",
+  "moon-03-waxing-gibbous.svg",
+  "moon-04-full.svg",
+  "moon-05-waning-gibbous.svg",
+  "moon-06-last-quarter.svg",
+  "moon-07-waning-crescent.svg"
+];
+
+phase_sprites = [];
+for (i = 0; i < 8; i++)
+{
+  phase_image = Image(phase_files[i]).Scale(76, 76);
+  phase_sprites[i] = Sprite(phase_image);
+  phase_sprites[i].SetPosition(screen_w / 2 - phase_image.GetWidth() / 2, screen_h * 0.64, 20);
+  phase_sprites[i].SetOpacity(0);
+}
+current_phase = 0;
+previous_phase = 0;
+transition = 1;
+phase_sprites[0].SetOpacity(1);
+
+fun progress_callback(duration, progress)
+{
+  progress = Math.Clamp(progress, 0, 1);
+  target_phase = Math.Int(progress * 7.999);
+  if (target_phase != current_phase)
+  {
+    previous_phase = current_phase;
+    current_phase = target_phase;
+    transition = 0;
+  }
+}
+Plymouth.SetBootProgressFunction(progress_callback);
+
+fun refresh_callback()
+{
+  if (transition < 1)
+  {
+    transition = Math.Min(1, transition + 0.05);
+    phase_sprites[previous_phase].SetOpacity(1 - transition);
+    phase_sprites[current_phase].SetOpacity(transition);
+  }
+}
+Plymouth.SetRefreshFunction(refresh_callback);
+
+# Keep disk-encryption and other Plymouth prompts visible over the artwork.
+prompt_sprite = Sprite();
+prompt_sprite.SetPosition(screen_w / 2, screen_h * 0.82, 1000);
+entry_sprite = Sprite();
+entry_sprite.SetPosition(screen_w / 2, screen_h * 0.88, 1000);
+
+fun display_password_callback(prompt, bullets)
+{
+  prompt_image = Image.Text(prompt, 0.88, 0.82, 0.91);
+  prompt_sprite.SetImage(prompt_image);
+  prompt_sprite.SetX(screen_w / 2 - prompt_image.GetWidth() / 2);
+  entry_text = "";
+  for (i = 0; i < bullets; i++) { entry_text = entry_text + "•"; }
+  entry_image = Image.Text(entry_text, 0.91, 0.84, 0.68);
+  entry_sprite.SetImage(entry_image);
+  entry_sprite.SetX(screen_w / 2 - entry_image.GetWidth() / 2);
+}
+Plymouth.SetDisplayPasswordFunction(display_password_callback);
+
+fun display_question_callback(prompt, entry)
+{
+  prompt_image = Image.Text(prompt, 0.88, 0.82, 0.91);
+  prompt_sprite.SetImage(prompt_image);
+  prompt_sprite.SetX(screen_w / 2 - prompt_image.GetWidth() / 2);
+  entry_image = Image.Text(entry, 0.91, 0.84, 0.68);
+  entry_sprite.SetImage(entry_image);
+  entry_sprite.SetX(screen_w / 2 - entry_image.GetWidth() / 2);
+}
+Plymouth.SetDisplayQuestionFunction(display_question_callback);
+
+fun display_normal_callback()
+{
+  prompt_sprite.SetImage(Image.Text("", 0.88, 0.82, 0.91));
+  entry_sprite.SetImage(Image.Text("", 0.91, 0.84, 0.68));
+}
+Plymouth.SetDisplayNormalFunction(display_normal_callback);
+
+fun message_callback(text)
+{
+  message_image = Image.Text(text, 0.84, 0.78, 0.88);
+  message_sprite = Sprite(message_image);
+  message_sprite.SetPosition(screen_w / 2 - message_image.GetWidth() / 2, screen_h * 0.93, 1000);
+}
+Plymouth.SetMessageFunction(message_callback);
