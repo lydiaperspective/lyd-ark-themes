@@ -75,6 +75,9 @@ ForegroundNegative=224,112,125
 ForegroundNeutral=210,171,99
 ForegroundPositive=132,190,154
 
+DecorationFocus=152,116,196
+DecorationHover=182,154,85
+
 [WM]
 activeBackground=48,32,63
 activeBlend=233,225,213
