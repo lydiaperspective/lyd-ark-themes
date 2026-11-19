@@ -3,8 +3,8 @@
   "KPlugin": {
     "Id": "org.lydark.wicca.desktop",
     "Name": "Lyd Ark Wicca",
-    "Description": "A midnight-plum Plasma experience with a golden crescent moon splash screen.",
-    "Version": "0.1.0",
+    "Description": "A Wicca-inspired midnight-plum Plasma experience with softly illustrated celestial artwork.",
+    "Version": "0.2.0",
     "License": "GPL-3.0-or-later",
     "Authors": [
       {
