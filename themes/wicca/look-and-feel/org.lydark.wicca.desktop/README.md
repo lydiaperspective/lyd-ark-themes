@@ -6,9 +6,9 @@ This is the Plasma 6 Look-and-Feel package for the Wicca splash screen.
 
 - `metadata.json`: Plasma Look-and-Feel package metadata.
 - `contents/splash/Splash.qml`: animated splash layout.
-- `contents/splash/images/crescent-moon.svg`: antique-gold crescent.
+- `contents/splash/images/crescent-moon.svg`: rounded, softly shaded antique-gold crescent.
 - `contents/splash/images/moon-glow.svg`: restrained diffuse glow.
-- `contents/splash/images/shooting-star.svg`: shooting star and fading trail.
+- `contents/splash/images/shooting-star.svg`: rounded shooting star and fading trail.
 
 ## Install for the current user
 
@@ -25,6 +25,8 @@ Then open System Settings → Appearance → Splash Screen, select **Lyd Ark Wic
 ## Design constraints
 
 The shooting star travels along one open curved sweep above the crescent. Its motion path is not drawn. There are no orbit rings, decorative loops, stray circles, or lines crossing the moon.
+
+The illustration style is cute, rounded, and softly shaded, with antique gold and subtle lavender accents. The splash stays intentionally simple; richer Wiccan motifs such as triple-moon symbolism, crystals, and botanical details belong in supporting theme artwork rather than cluttering the startup animation.
 
 The splash uses Breeze-compatible Plasma geometry; it does not change desktop widget spacing or sizing.
 
