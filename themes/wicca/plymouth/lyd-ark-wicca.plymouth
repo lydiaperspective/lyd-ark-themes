@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Lyd Ark Wicca
+Description=Cartoon-inspired lunar boot progress for Lyd Ark Linux
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/lyd-ark-wicca
+ScriptFile=/usr/share/plymouth/themes/lyd-ark-wicca/lyd-ark-wicca.script
