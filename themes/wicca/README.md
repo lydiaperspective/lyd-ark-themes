@@ -1,6 +1,6 @@
 # Lyd Ark Wicca
 
-A cute, polished, Wicca-inspired appearance for KDE Plasma. The desktop should feel like a premium purple KDE experience first, with a gentle cartoon illustration style and thoughtful Wiccan celestial and nature symbolism.
+A cute, polished, Wicca-inspired appearance for KDE Plasma and the early boot experience. The desktop should feel like a premium purple KDE experience first, with a gentle cartoon illustration style and thoughtful Wiccan celestial and nature symbolism.
 
 ## Visual identity
 
@@ -47,13 +47,15 @@ These are standalone SVG artwork assets, not yet a complete installable KDE icon
 
 ## Boot splash
 
-A friendly, softly illustrated golden crescent moon in a deep purple night sky. A single rounded shooting star travels along a graceful curved arc near the moon and loops seamlessly. The wider Wicca identity may use moon-phase or botanical details in supporting artwork, but the splash must stay uncluttered. There must be **no orbital rings, no decorative loops around the moon, and no stray circle or halo crossing over the moon**. Keep the crescent clearly visible and the animation calm.
+The early-boot Plymouth theme uses a cartoon-inspired Lyd Ark crescent logo, midnight-plum background, and LYD ARK LINUX wordmark. Eight gold moon phases replace the spinner and advance according to Plymouth's reported boot progress, with a soft cross-fade between phases. The Plymouth theme retains password and question prompts for encrypted installations.
+
+The later KDE Plasma splash remains a separate component and uses the approved golden crescent and shooting-star artwork.
 
 ## Component status
 
 - [x] Initial KDE colour scheme (`colors/Lyd Ark Wicca.colors`)
 - [x] Plasma 6 startup splash package (QML + SVG artwork; runtime validation pending)
-- [ ] Plymouth pre-login boot splash (separate component)
+- [x] Plymouth lunar boot theme (progress-linked moon phases; runtime validation pending)
 - [ ] Wallpapers with Wiccan celestial and botanical motifs
 - [x] Cartoon crescent launcher emblem
 - [x] Initial Wicca cartoon SVG icon family
