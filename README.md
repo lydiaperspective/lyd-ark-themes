@@ -4,7 +4,7 @@ Official visual themes and desktop branding for Lyd Ark.
 
 ## Themes
 
-- **Lyd Ark Wicca** — a modern mystical KDE Plasma theme built around midnight plum, royal purple, amethyst, and restrained antique gold.
+- **Lyd Ark Wicca** — a cute, polished Wicca-inspired KDE Plasma theme built around midnight plum, royal purple, amethyst, antique gold, moon symbolism, crystals, and botanical artwork.
 - **Lyd Ark Cute** — a clean, cheerful pastel theme with pink as its primary colour and lavender as a secondary accent. (Planned)
 
 ## Design principles
@@ -13,7 +13,8 @@ Official visual themes and desktop branding for Lyd Ark.
 - Change appearance, not application geometry.
 - Keep Lyd Ark applications native to the active KDE Plasma theme.
 - Prefer KDE-native theme formats and settings over application-specific styling.
-- Keep artwork and decorative details primarily in wallpapers, splash screens, and branding assets.
+- Use a shared, polished cartoon-vector illustration language while giving each theme its own motifs and palette.
+- Keep artwork and decorative details primarily in wallpapers, splash screens, icons, and branding assets.
 - Provide readable contrast and clear focus, hover, selected, and disabled states.
 
 ## Repository layout
@@ -31,11 +32,10 @@ themes/
   cute/
     README.md
 docs/
+  cartoon-artwork-guide.md
   theme-development.md
 ```
 
-Theme components will be added incrementally and packaged for installation once validated against the Lyd Ark Plasma version.
-
 ## Status
 
-The Wicca theme is in its initial design and implementation stage. The Cute theme is planned.
+The Wicca theme has its initial colour scheme, Plasma splash package, and a starter set of original cartoon SVG artwork. The splash and theme still need runtime validation and broader KDE component integration. The Cute theme is planned.
