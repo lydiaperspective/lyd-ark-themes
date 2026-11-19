@@ -1,6 +1,13 @@
 # Lyd Ark Wicca
 
-A modern, elegant, mystical appearance for KDE Plasma. The desktop should feel like a premium purple KDE experience first, with subtle celestial character second.
+A cute, polished, Wicca-inspired appearance for KDE Plasma. The desktop should feel like a premium purple KDE experience first, with a gentle cartoon illustration style and thoughtful Wiccan celestial and nature symbolism.
+
+## Visual identity
+
+- **Style:** rounded cartoon-vector artwork, soft shading, warm highlights, and restrained outlines.
+- **Mood:** mystical, peaceful, nature-connected, and charming—not gothic or spooky.
+- **Signature motifs:** moon phases and triple-moon imagery, stars, delicate botanical elements, crystals, and occasional subtle pentacle geometry.
+- **Artwork balance:** use symbols intentionally. Not every icon needs to be a moon, and the desktop should not be crowded with decorative motifs.
 
 ## Palette
 
@@ -18,16 +25,14 @@ A modern, elegant, mystical appearance for KDE Plasma. The desktop should feel l
 
 - Breeze is the layout and spacing reference. Do not independently change margins, padding, widget dimensions, or control spacing.
 - Use consistent, modest corner rounding compatible with Breeze.
-- Use antique gold sparingly for selected states, small highlights, and occasional icon details.
+- Use antique gold sparingly for selected states, small highlights, and symbolic icon details.
 - Keep typography clean and readable.
 - Avoid heavy gothic styling, noisy textures, oversized pill controls, and excessive ornament.
-- Use subtle celestial or botanical details mainly in wallpapers and branding.
+- Use botanical and Wiccan-inspired details mainly in branding, wallpapers, splash screens, and selected icons.
 
 ## Boot splash concept
 
-A luminous golden crescent moon in a deep purple night sky. A single shooting star travels along a graceful curved arc near the moon and loops seamlessly. There must be **no orbital rings, no decorative loops around the moon, and no stray circle or halo crossing over the moon**. Keep the crescent clearly visible and the animation calm.
-
-The splash should use the night-sky artwork as its visual foundation. Animation and final packaging will be implemented after the static composition is approved.
+A friendly, softly illustrated golden crescent moon in a deep purple night sky. A single rounded shooting star travels along a graceful curved arc near the moon and loops seamlessly. The wider Wicca identity may use moon-phase or botanical details in supporting artwork, but the splash must stay uncluttered. There must be **no orbital rings, no decorative loops around the moon, and no stray circle or halo crossing over the moon**. Keep the crescent clearly visible and the animation calm.
 
 ## Planned components
 
@@ -35,9 +40,10 @@ The splash should use the night-sky artwork as its visual foundation. Animation 
 - Plasma Look-and-Feel package
 - [x] Plasma 6 startup splash package (QML + SVG artwork; runtime validation pending)
 - [ ] Plymouth pre-login boot splash (separate component)
-- Wallpapers
-- [x] Initial scalable crescent launcher emblem (`icons/lyd-ark-wicca-moon.svg`)
-- Optional coordinated icons and cursors
+- Wallpapers with Wiccan celestial and botanical motifs
+- [x] Initial scalable cartoon crescent launcher emblem (`icons/lyd-ark-wicca-moon.svg`)
+- [ ] Coordinated cartoon icon family
+- Optional coordinated cursors
 - Login-screen branding, where supported by the target Plasma version
 
 ## System Manager integration
