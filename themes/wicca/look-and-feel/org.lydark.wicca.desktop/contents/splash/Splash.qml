@@ -49,7 +49,7 @@ Rectangle {
         id: starPath
 
         startX: root.width * 0.19
-        startY: root.height * 0.37
+        startY: root.height * 0.37 - shootingStar.height / 2
 
         PathCubic {
             x: root.width * 0.81
@@ -69,7 +69,7 @@ Rectangle {
         fillMode: Image.PreserveAspectFit
         smooth: true
         x: starPath.startX
-        y: starPath.startY - height / 2
+        y: starPath.startY
         opacity: 0.0
     }
 
@@ -109,7 +109,7 @@ Rectangle {
         PropertyAction {
             target: shootingStar
             property: "y"
-            value: starPath.startY - shootingStar.height / 2
+            value: starPath.startY
         }
 
         PauseAnimation {
