@@ -30,21 +30,36 @@ A cute, polished, Wicca-inspired appearance for KDE Plasma. The desktop should f
 - Avoid heavy gothic styling, noisy textures, oversized pill controls, and excessive ornament.
 - Use botanical and Wiccan-inspired details mainly in branding, wallpapers, splash screens, and selected icons.
 
-## Boot splash concept
+## Current cartoon icon family
+
+The SVG assets are original theme artwork and can be used independently in branding, launcher artwork, wallpapers, and future icon-theme work.
+
+| Asset | Motif |
+|---|---|
+| `icons/lyd-ark-wicca-moon.svg` | Rounded antique-gold crescent with lavender sparkle |
+| `icons/triple-moon.svg` | Waxing crescent, full moon, and waning crescent |
+| `icons/amethyst-crystal.svg` | Softly faceted amethyst cluster |
+| `icons/lavender-sprig.svg` | Lavender flowers and botanical leaves |
+| `icons/sage-leaf.svg` | Sage leaves with gentle green shading |
+| `icons/pentacle.svg` | Restrained antique-gold pentacle emblem |
+
+These are standalone SVG artwork assets, not yet a complete installable KDE icon theme. A full icon theme needs application and system icon coverage, naming, inheritance, and size variants.
+
+## Boot splash
 
 A friendly, softly illustrated golden crescent moon in a deep purple night sky. A single rounded shooting star travels along a graceful curved arc near the moon and loops seamlessly. The wider Wicca identity may use moon-phase or botanical details in supporting artwork, but the splash must stay uncluttered. There must be **no orbital rings, no decorative loops around the moon, and no stray circle or halo crossing over the moon**. Keep the crescent clearly visible and the animation calm.
 
-## Planned components
+## Component status
 
 - [x] Initial KDE colour scheme (`colors/Lyd Ark Wicca.colors`)
-- Plasma Look-and-Feel package
 - [x] Plasma 6 startup splash package (QML + SVG artwork; runtime validation pending)
 - [ ] Plymouth pre-login boot splash (separate component)
-- Wallpapers with Wiccan celestial and botanical motifs
-- [x] Initial scalable cartoon crescent launcher emblem (`icons/lyd-ark-wicca-moon.svg`)
-- [ ] Coordinated cartoon icon family
-- Optional coordinated cursors
-- Login-screen branding, where supported by the target Plasma version
+- [ ] Wallpapers with Wiccan celestial and botanical motifs
+- [x] Cartoon crescent launcher emblem
+- [x] Initial Wicca cartoon SVG icon family
+- [ ] Full installable KDE icon theme with application/system icon coverage
+- [ ] Optional coordinated cursors
+- [ ] Login-screen branding, where supported by the target Plasma version
 
 ## System Manager integration
 
