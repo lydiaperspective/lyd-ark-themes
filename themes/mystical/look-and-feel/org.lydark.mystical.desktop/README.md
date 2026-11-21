@@ -1,6 +1,6 @@
-# Lyd Ark Wicca Plasma Splash
+# Mystical Plasma Splash
 
-This is the Plasma 6 Look-and-Feel package for the Wicca splash screen.
+This is the Plasma 6 Look-and-Feel package for the Mystical splash screen.
 
 ## Contents
 
@@ -16,17 +16,17 @@ From the repository root:
 
 ```sh
 mkdir -p ~/.local/share/plasma/look-and-feel
-cp -a themes/wicca/look-and-feel/org.lydark.wicca.desktop \
+cp -a themes/mystical/look-and-feel/org.lydark.mystical.desktop \
   ~/.local/share/plasma/look-and-feel/
 ```
 
-Then open System Settings → Appearance → Splash Screen, select **Lyd Ark Wicca**, and apply it. The package can also be installed system-wide under `/usr/share/plasma/look-and-feel/`.
+Then open System Settings → Appearance → Splash Screen, select **Mystical**, and apply it. The package can also be installed system-wide under `/usr/share/plasma/look-and-feel/`.
 
 ## Design constraints
 
 The shooting star travels along one open curved sweep above the crescent. Its motion path is not drawn. There are no orbit rings, decorative loops, stray circles, or lines crossing the moon.
 
-The illustration style is cute, rounded, and softly shaded, with antique gold and subtle lavender accents. The splash stays intentionally simple; richer Wiccan motifs such as triple-moon symbolism, crystals, and botanical details belong in supporting theme artwork rather than cluttering the startup animation.
+The illustration style is cute, rounded, and softly shaded, with antique gold and subtle lavender accents. The splash stays intentionally simple; richer celestial motifs such as triple-moon symbolism, crystals, and botanical details belong in supporting theme artwork rather than cluttering the startup animation.
 
 The splash uses Breeze-compatible Plasma geometry; it does not change desktop widget spacing or sizing.
 

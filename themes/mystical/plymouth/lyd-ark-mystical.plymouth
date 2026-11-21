@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Mystical
+Description=Cartoon-inspired lunar boot progress for Lyd Ark Linux
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/lyd-ark-mystical
+ScriptFile=/usr/share/plymouth/themes/lyd-ark-mystical/lyd-ark-mystical.script

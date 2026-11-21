@@ -1,12 +1,12 @@
-# Lyd Ark Wicca Plymouth theme
-# Eight moon phases map directly to Plymouth's boot progress (0.0–1.0).
+# Mystical Plymouth theme
+# The lunar indicator loops independently of Plymouth's boot-progress estimate.
 Window.SetBackgroundTopColor(0.129, 0.082, 0.180);
 Window.SetBackgroundBottomColor(0.188, 0.122, 0.247);
 
 screen_w = Window.GetWidth();
 screen_h = Window.GetHeight();
 
-logo_image = Image("lyd-ark-wicca.png").Scale(176, 176);
+logo_image = Image("lyd-ark-mystical.png").Scale(176, 176);
 logo_sprite = Sprite(logo_image);
 logo_sprite.SetPosition(screen_w / 2 - logo_image.GetWidth() / 2, screen_h * 0.19, 10);
 
@@ -33,31 +33,39 @@ for (i = 0; i < 8; i++)
   phase_sprites[i].SetPosition(screen_w / 2 - phase_image.GetWidth() / 2, screen_h * 0.64, 20);
   phase_sprites[i].SetOpacity(0);
 }
+
+# Start with the new moon and continuously cycle through all eight phases.
 current_phase = 0;
-previous_phase = 0;
+next_phase = 1;
 transition = 1;
-phase_sprites[0].SetOpacity(1);
+hold = 0;
+phase_sprites[current_phase].SetOpacity(1);
 
-fun progress_callback(duration, progress)
-{
-  progress = Math.Clamp(progress, 0, 1);
-  target_phase = Math.Int(progress * 7.999);
-  if (target_phase != current_phase)
-  {
-    previous_phase = current_phase;
-    current_phase = target_phase;
-    transition = 0;
-  }
-}
-Plymouth.SetBootProgressFunction(progress_callback);
-
+# Plymouth calls the refresh callback repeatedly while the splash is visible.
+# Each phase gently cross-fades, pauses briefly, and advances regardless of boot progress.
 fun refresh_callback()
 {
   if (transition < 1)
   {
-    transition = Math.Min(1, transition + 0.05);
-    phase_sprites[previous_phase].SetOpacity(1 - transition);
-    phase_sprites[current_phase].SetOpacity(transition);
+    transition = Math.Min(1, transition + 0.04);
+    phase_sprites[current_phase].SetOpacity(1 - transition);
+    phase_sprites[next_phase].SetOpacity(transition);
+
+    if (transition >= 1)
+    {
+      phase_sprites[current_phase].SetOpacity(0);
+      current_phase = next_phase;
+      hold = 0;
+    }
+  }
+  else
+  {
+    hold = hold + 1;
+    if (hold >= 24)
+    {
+      next_phase = (current_phase + 1) % 8;
+      transition = 0;
+    }
   }
 }
 Plymouth.SetRefreshFunction(refresh_callback);

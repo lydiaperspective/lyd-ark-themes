@@ -1,7 +1,8 @@
 [General]
-Name=Lyd Ark Wicca
-ColorScheme=Lyd Ark Wicca
+Name=Mystical
+ColorScheme=Mystical
 shadeSortColumn=true
+AccentColor=152,116,196
 
 [Colors:Window]
 BackgroundNormal=33,21,46
@@ -75,13 +76,49 @@ ForegroundNegative=224,112,125
 ForegroundNeutral=210,171,99
 ForegroundPositive=132,190,154
 
-DecorationFocus=152,116,196
-DecorationHover=182,154,85
+[Colors:Header]
+BackgroundNormal=48,32,63
+BackgroundAlternate=58,39,76
+ForegroundNormal=233,225,213
+ForegroundInactive=170,155,184
+ForegroundActive=215,200,232
+ForegroundLink=184,154,220
+ForegroundVisited=152,116,196
+ForegroundNegative=224,112,125
+ForegroundNeutral=210,171,99
+ForegroundPositive=132,190,154
+
+[Colors:Header][Inactive]
+BackgroundNormal=33,21,46
+BackgroundAlternate=42,29,55
+ForegroundNormal=170,155,184
+ForegroundInactive=132,119,146
+ForegroundActive=215,200,232
+ForegroundLink=184,154,220
+ForegroundVisited=152,116,196
+ForegroundNegative=224,112,125
+ForegroundNeutral=210,171,99
+ForegroundPositive=132,190,154
+
+[Colors:Tooltip][Inactive]
+BackgroundNormal=42,29,55
+BackgroundAlternate=48,32,63
+ForegroundNormal=170,155,184
+ForegroundInactive=132,119,146
+ForegroundActive=215,200,232
+ForegroundLink=184,154,220
+ForegroundVisited=152,116,196
+ForegroundNegative=224,112,125
+ForegroundNeutral=210,171,99
+ForegroundPositive=132,190,154
+
+DecorationFocus=182,154,85
+DecorationHover=152,116,196
 
 [WM]
-activeBackground=48,32,63
+activeBackground=88,52,119
 activeBlend=233,225,213
-activeForeground=233,225,213
+activeForeground=255,250,255
 inactiveBackground=33,21,46
 inactiveBlend=170,155,184
 inactiveForeground=170,155,184
