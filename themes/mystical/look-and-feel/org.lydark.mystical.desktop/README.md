@@ -26,7 +26,7 @@ Then open System Settings → Appearance → Splash Screen, select **Mystical**,
 
 The shooting star travels along one open curved sweep above the crescent. Its motion path is not drawn. There are no orbit rings, decorative loops, stray circles, or lines crossing the moon.
 
-The illustration style is cute, rounded, and softly shaded, with antique gold and subtle lavender accents. The splash stays intentionally simple; richer Mysticaln motifs such as triple-moon symbolism, crystals, and botanical details belong in supporting theme artwork rather than cluttering the startup animation.
+The illustration style is cute, rounded, and softly shaded, with antique gold and subtle lavender accents. The splash stays intentionally simple; richer celestial motifs such as triple-moon symbolism, crystals, and botanical details belong in supporting theme artwork rather than cluttering the startup animation.
 
 The splash uses Breeze-compatible Plasma geometry; it does not change desktop widget spacing or sizing.
 
