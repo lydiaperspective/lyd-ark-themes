@@ -1,6 +1,6 @@
 # Mystical
 
-A cute, polished, Mystical-inspired appearance for KDE Plasma and the early boot experience. The desktop should feel like a premium purple KDE experience first, with a gentle cartoon illustration style and thoughtful Mysticaln celestial and nature symbolism.
+A cute, polished, mystical lunar appearance for KDE Plasma and the early boot experience. The desktop should feel like a premium purple KDE experience first, with a gentle cartoon illustration style and thoughtful celestial and nature symbolism.
 
 ## Visual identity
 
@@ -41,7 +41,7 @@ These roles are designed to work with Breeze's existing widget geometry and inte
 - Use antique gold for focus, small highlights, and symbolic icon details; do not use it as a large text or surface colour.
 - Keep typography clean and readable.
 - Avoid heavy gothic styling, noisy textures, oversized pill controls, and excessive ornament.
-- Use botanical and Mysticaln-inspired details mainly in branding, wallpapers, splash screens, and selected icons.
+- Use botanical and celestial-inspired details mainly in branding, wallpapers, splash screens, and selected icons.
 
 ## Current cartoon icon family
 
@@ -70,7 +70,7 @@ The later KDE Plasma splash remains a separate component and uses the approved g
 - [x] Expanded KDE colour roles for windows, views, buttons, headers, selections, tooltips, and window decorations
 - [x] Plasma 6 startup splash package (QML + SVG artwork; runtime validation pending)
 - [x] Plymouth lunar boot theme with a progress-independent looping phase animation (runtime validation pending)
-- [ ] Wallpapers with Mysticaln celestial and botanical motifs
+- [ ] Wallpapers with celestial and botanical motifs
 - [x] Cartoon crescent launcher emblem
 - [x] Initial Mystical cartoon SVG icon family
 - [ ] Full installable KDE icon theme with application/system icon coverage
